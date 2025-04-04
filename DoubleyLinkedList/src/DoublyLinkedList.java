@@ -122,10 +122,97 @@ public class DoublyLinkedList {
     }
 
     public Node get(int index){
+        if(index < 0 || index >= length) return null;
         Node temp = head;
-        for(int i = 0; i < index; i++){
-            temp = temp.next;
+        if(index < length/2){
+            for(int i = 0; i < index; i++){
+                temp = temp.next;
+            }
+        }else{
+            temp = tail;
+            for(int i = length - 1; i > index; i--){
+                temp = temp.prev;
+            }
         }
+        return temp;
+    }
+
+    public boolean set(int index, int value){
+        //my solution
+//        Node temp = head;
+//        if(length == 0) return false;
+//        if(index < 0 || index >= length) return false;
+//
+//        for(int i = 0; i<index; i++){
+//            temp = temp.next;
+//        }
+//        temp.value = value;
+//        return true;
+
+        // Solution
+        Node temp = get(index);
+        if(temp != null){
+            temp.value = value;
+            return true;
+        }
+        return false;
+    }
+
+    public boolean insert(int index, int value){
+        if(index < 0 || index > length) return false;
+
+        if(index == 0 ){
+            prePend(value);
+            return true;
+        }
+
+        if(index == length){
+            append(value);
+            return true;
+        }
+
+        Node newNode = new Node(value);
+        Node before = get(index - 1);
+        Node after = before.next;
+        before.next = newNode;
+        newNode.prev = before;
+        after.prev = newNode;
+        newNode.next = after;
+        length++;
+        return true;
+
+    }
+
+    public Node remove(int index){
+        if(index < 0 || index >= length) return null;
+
+        if(index == 0){
+
+            return removeFirst();
+        }
+
+        if(index == length - 1){
+            return removeLast();
+        }
+
+        //my code
+//        Node temp = get(index);
+//        Node before = temp.prev;
+//        Node after = temp.next;
+//        before.next = after;
+//        after.prev = before;
+//        temp.next = null;
+//        temp.prev = null;
+//        length--;
+//        return temp;
+
+        // Solution
+        Node temp = get(index);
+        temp.prev.next = temp.next;
+        temp.next.prev = temp.prev;
+        temp.next = null;
+        temp.prev = null;
+        length--;
         return temp;
     }
 }
