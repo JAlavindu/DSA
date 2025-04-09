@@ -2,7 +2,17 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/BinaryToDecimal/BinaryToDecimal.iml" filepath="$PROJECT_DIR$/BinaryToDecimal/BinaryToDecimal.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Sorting/BubbleSort/BubbleSort.iml" filepath="$PROJECT_DIR$/Sorting/BubbleSort/BubbleSort.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Sorting/InsertionSort/InsertionSort.iml" filepath="$PROJECT_DIR$/Sorting/InsertionSort/InsertionSort.iml" />
+      <module fileurl="file://$PROJECT_DIR$/LinearSearch/LinearSearch.iml" filepath="$PROJECT_DIR$/LinearSearch/LinearSearch.iml" />
+      <module fileurl="file://$PROJECT_DIR$/LinkedLists/LinkedLists.iml" filepath="$PROJECT_DIR$/LinkedLists/LinkedLists.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/LinkedListsMain.iml" filepath="$PROJECT_DIR$/.idea/LinkedListsMain.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Sorting/MergeSort/MergeSort.iml" filepath="$PROJECT_DIR$/Sorting/MergeSort/MergeSort.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Sorting/QuickSORT/QuickSORT.iml" filepath="$PROJECT_DIR$/Sorting/QuickSORT/QuickSORT.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Remove Duplicates/Remove Duplicates.iml" filepath="$PROJECT_DIR$/Remove Duplicates/Remove Duplicates.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ReverseBetween/ReverseBetween.iml" filepath="$PROJECT_DIR$/ReverseBetween/ReverseBetween.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Sorting/SelectionSort/SelectionSort.iml" filepath="$PROJECT_DIR$/Sorting/SelectionSort/SelectionSort.iml" />
     </modules>
   </component>
 </project>
