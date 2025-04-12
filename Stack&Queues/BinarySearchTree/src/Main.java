@@ -11,5 +11,7 @@ public class Main {
 
         System.out.println(myBST.root.value); // Should print 10
         System.out.println(myBST.root.left.value); // Should print 5
+
+        System.out.println(myBST.contains(7)); // Should return true
     }
 }
