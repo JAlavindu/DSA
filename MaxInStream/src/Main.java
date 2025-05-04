@@ -6,7 +6,6 @@ public class Main {
     public static List<Integer> streamMax(int[] nums){
         List<Integer> result = new ArrayList<>();
         Heap heap = new Heap();
-        int max = 0;
 
         for(int i : nums){
             heap.insert(i);
@@ -15,7 +14,6 @@ public class Main {
 
         return result;
     }
-
 
     public static void main(String[] args) {
         // Test case 1
